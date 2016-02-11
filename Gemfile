@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.1'
-gem 'sqlite3'
+gem 'pg'
 gem 'rails-i18n'
 gem 'haml-rails'
 
@@ -12,6 +12,10 @@ gem 'coffee-rails'
 # scss
 gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
+
+# for admin
+#gem 'activeadmin', github: 'activeadmin'
+#gem 'inherited_resources', github: 'josevalim/inherited_resources', branch: 'rails-4-2'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
