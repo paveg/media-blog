@@ -3,13 +3,19 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>content</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
   </tr>
 
   <% @posts.each do |post| %>
     <tr>
       <td><%= post.title %></td>
       <td><%= post.text %></td>
+      <td><%= link_to 'Detail', post %></td>
+      <td><%= link_to 'Edit', edit_post_path(post) %></td>
+      <td><%= link_to 'Delete' post_path(post),
+        method: :delete, data: { confirm: 'really delete it?' } %></td>
     </tr>
   <% end %>
 </table>
