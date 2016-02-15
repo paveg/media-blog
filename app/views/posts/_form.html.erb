@@ -1,30 +1,30 @@
 <%= form_for @post do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <% if @post.errors.count == 1 %>
-        <h2>Because <%= @post.errors.count %> error occurred, it was not able to save.</h2>
-      <% elsif @post.errors.count <= 2 %>
-        <h2>Because <%= @post.errors.count %> errors occurred, it was not able to save.</h2>
-      <% end %>
-      <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+				<% if @post.errors.any? %>
+								<div id="error_explanation">
+										<% if @post.errors.count == 1 %>
+														<h2>Because <%= @post.errors.count %> error occurred, it was not able to save.</h2>
+										<% elsif @post.errors.count <= 2 %>
+														<h2>Because <%= @post.errors.count %> errors occurred, it was not able to save.</h2>
+										<% end %>
+										<ul>
+												<% @post.errors.full_messages.each do |msg| %>
+																<li><%= msg %></li>
+												<% end %>
+										</ul>
+								</div>
+				<% end %>
 
-  <p>
-    <%= f.label :title, "Title" %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text, "Content" %><br>
-    <%= f.text_area :text, cols: 60, rows: 8 %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
+				<p>
+						<%= f.label :title, "Title" %><br>
+						<%= f.text_field :title %>
+				</p>
+
+				<p>
+						<%= f.label :text, "Content" %><br>
+						<%= f.text_area :text, cols: 60, rows: 8 %>
+				</p>
+
+				<p>
+						<%= f.submit %>
+				</p>
 <% end %>

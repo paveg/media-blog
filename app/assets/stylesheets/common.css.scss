@@ -1,9 +1,9 @@
 // カラー変数
-$baseBlack:     #333;
-$baseGray:      #aaa;
-$baseLightGray: #eee;
-$baseBlue:      #428bca;
-$baseLightBlue: #5bc0de;
+$baseBlack: #333333;
+$baseGray: #AAAAAA;
+$baseLightGray: #EEEEEE;
+$baseBlue: #428BCA;
+$baseLightBlue: #5BC0DE;
 
 /*-----------------------------
 
@@ -11,15 +11,15 @@ $baseLightBlue: #5bc0de;
 
 ------------------------------*/
 body,
-h1,h2,h3,h4,h5,h6,
-p,ul,ol,dl,dt,dd,li,
-table,th,td,
-form,select,option,input
-address,pre,strong,em,iframe,img{
-  margin:0;
-  padding:0;
-  font-size:100%;
-  border:0;
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dt, dd, li,
+table, th, td,
+form, select, option, input
+address, pre, strong, em, iframe, img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
 }
 
 /* デフォルト文字設定 */
@@ -31,15 +31,14 @@ body {
   height: 100%;
 
   color: $baseBlack;
-  font-family: "Gotham Narrow SSm",Arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-family: "Gotham Narrow SSm", Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 14px;
   line-height: 1.4;
 }
 
-
 /* リストのマーカーを非表示 */
 ul, ol {
-  list-style-type:none;
+  list-style-type: none;
 }
 
 /* デフォルトリンク色の設定 */
@@ -53,7 +52,6 @@ a:-webkit-any-link {
     color: $baseLightBlue;
   }
 }
-
 
 /*--------------------------
 
@@ -86,7 +84,7 @@ header {
     width: 800px;
     height: 58px;
     margin: 0 auto;
-   
+
     #logo {
       font-size: 250%;
       text-decoration: none;
@@ -102,7 +100,6 @@ header {
   }
 }
 
-
 /* メインコンテンツ
 ---------------------------*/
 #main {
@@ -116,14 +113,12 @@ header {
   background-color: white;
   border-radius: 5px;
 
-
   h1 {
     font-size: 200%;
     margin-bottom: 20px;
     border-bottom: 1px solid $baseBlue;
   }
 }
-
 
 /*-----------------------------
 
@@ -133,7 +128,7 @@ header {
 input[type="text"],
 textarea {
   border-radius: 3px;
-  border: 1px solid $baseGray; 
+  border: 1px solid $baseGray;
 }
 
 .hint {
